@@ -97,6 +97,12 @@ Plugin 'tyru/restart.vim'
 "------
 Plugin 'ervandew/supertab'
 
+"------
+Plugin 'scrooloose/nerdcommenter'
+
+"------
+"Plugin 'tpope/vim-repeat'
+
 """"""""""""""""""""""""""""""
 " => colorscheme
 """"""""""""""""""""""""""""""
@@ -107,8 +113,7 @@ Plugin 'flazz/vim-colorschemes'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
+"
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 " Git plugin not hosted on GitHub
