@@ -25,3 +25,7 @@ l 插入、命令行和 Lang-Arg 模式的 ":lmap" 映射
 c 命令行 
 0 行首
 ```
+
+```
+git clone -b vimrc git@github.com:buutuud/learn-vim.git .vim_runtime
+```
