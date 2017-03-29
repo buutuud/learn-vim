@@ -73,16 +73,18 @@ nnoremap <F9> :GutentagsUpdate<CR>
 Plugin 'derekwyatt/vim-fswitch' 
 map <leader>o :FSHere<CR>
 
+if has('python')
+    " Track the engine.
+    Plugin 'SirVer/ultisnips'
 
-" Track the engine.
-Plugin 'SirVer/ultisnips'
+    " Snippets are separated from the engine. Add this if you want them:
+    Plugin 'honza/vim-snippets'
+    " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+    let g:UltiSnipsExpandTrigger="<tab>"
+    let g:UltiSnipsJumpForwardTrigger="<c-b>"
+    let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
-" Snippets are separated from the engine. Add this if you want them:
-Plugin 'honza/vim-snippets'
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+endif
 
 "-------------
 "This plug-in provides automatic closing of quotes, parenthesis, brackets, etc., 
@@ -102,6 +104,7 @@ Plugin 'scrooloose/nerdcommenter'
 
 "------
 "Plugin 'tpope/vim-repeat'
+Plugin 'c.vim'
 
 """"""""""""""""""""""""""""""
 " => colorscheme
@@ -110,6 +113,15 @@ Plugin 'https://github.com/xolox/vim-misc.git'
 Plugin 'https://github.com/vim-scripts/vim-colorscheme-switcher.git'
 Plugin 'flazz/vim-colorschemes'
 
+""""""""""""""""""""""""""""""
+" => Replace current word and move to the next match
+""""""""""""""""""""""""""""""
+Plugin 'pgdouyon/vim-protean'
+
+""""""""""""""""""""""""""""""
+" => Enhanced multi-file search for Vim
+""""""""""""""""""""""""""""""
+Plugin 'wincent/ferret'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
